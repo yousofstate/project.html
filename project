@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autofill Example</title>
+</head>
+<body>
+
+<h2>User Form</h2>
+
+<input type="text" id="name" placeholder="Name" oninput="autoFill()"><br><br>
+<input type="text" id="college" placeholder="College ID"><br><br>
+<input type="text" id="phone" placeholder="Phone"><br><br>
+<input type="email" id="email" placeholder="Email"><br><br>
+<input type="text" id="address" placeholder="Address"><br><br>
+
+<script>
+function autoFill() {
+  let name = document.getElementById("name").value;
+
+  if (name.toLowerCase() === "youssef") {
+    document.getElementById("college").value = "UFE 2025";
+    document.getElementById("phone").value = "01234567899";
+    document.getElementById("email").value = "yousof.state@gmail.com";
+    document.getElementById("address").value = "Cairo Sherouk";
+  }
+}
+</script>
+
+</body>
+</html>
